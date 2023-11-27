@@ -1,0 +1,109 @@
+time="2023-11-27 11:38:23" level=info msg="Finished reading JWT secret from ./network/node-1/execution/jwtsecret"
+time="2023-11-27 11:38:23" level=warning msg="Running on custom Ethereum network specified in a chain configuration yaml file" prefix=flags
+time="2023-11-27 11:38:23" level=warning msg="Enabled feature flag" prefix=flags slasher="Enables a slasher in the beacon node for detecting slashable offenses"
+time="2023-11-27 11:38:23" level=warning msg="Fee recipient 0x123463a4b065722e99115d6c222f267d9cabb524 is not a checksum Ethereum address. The checksummed address is 0x123463a4B065722E99115D6c222f267d9cABb524 and will be used as the fee recipient. We recommend using a mixed-case address (checksum) to prevent spelling mistakes in your fee recipient Ethereum address" prefix=node
+time="2023-11-27 11:38:23" level=info msg="Default fee recipient is set to 0x123463a4B065722E99115D6c222f267d9cABb524, recipient may be overwritten from validator client and persist in db. Default fee recipient will be used as a fall back" prefix=node
+time="2023-11-27 11:38:23" level=info msg="Checking DB" database-path="network/node-1/consensus/beacondata/beaconchaindata" prefix=node
+time="2023-11-27 11:38:23" level=info msg="Opening Bolt DB at network/node-1/consensus/beacondata/beaconchaindata/beaconchain.db" prefix=db
+time="2023-11-27 11:38:23" level=info msg="Loading genesis state from disk." hash=0x32b8c29b7a77d7efee075a3141bc7cfc0057ad509f3cd6e8a555ddd576eb2383 prefix=genesis
+time="2023-11-27 11:38:23" level=info msg="Deposit contract: 0x4242424242424242424242424242424242424242" prefix=node
+time="2023-11-27 11:38:23" level=info msg="Checking DB" database-path="network/node-1/consensus/beacondata/beaconchaindata" prefix=node
+time="2023-11-27 11:38:23" level=info msg="Running node with peer id of 16Uiu2HAky4xfyqg7EVCPz1qmcFykvycoZ59shhHodtLFPP3Jo9Qz " prefix=p2p
+time="2023-11-27 11:38:23" level=info msg="gRPC server listening on port" address="127.0.0.1:4001" prefix=rpc
+time="2023-11-27 11:38:23" level=warning msg="You are using an insecure gRPC server. If you are running your beacon node and validator on the same machines, you can ignore this message. If you want to know how to enable secure connections, see: https://docs.prylabs.network/docs/prysm-usage/secure-grpc" prefix=rpc
+time="2023-11-27 11:38:23" level=info msg="Starting beacon node" prefix=node version="Prysm/Unknown/Local build. Built at: Moments ago"
+time="2023-11-27 11:38:23" level=info msg="Starting API middleware" prefix=gateway
+time="2023-11-27 11:38:23" level=info msg="Waiting for state to be initialized" prefix=initial-sync
+time="2023-11-27 11:38:23" level=info msg="Blockchain data already exists in DB, initializing..." prefix=blockchain
+time="2023-11-27 11:38:23" level=info msg="Enabled debug gRPC endpoints" prefix=rpc
+time="2023-11-27 11:38:23" level=info msg="Starting gRPC gateway" address="127.0.0.1:4101" prefix=gateway
+time="2023-11-27 11:38:23" level=info msg="Received state initialized event" prefix=initial-sync
+time="2023-11-27 11:38:23" level=info msg="Chain started within the last epoch - not syncing" genesisTime=2023-11-27 11:38:03 +0100 CET prefix=initial-sync
+time="2023-11-27 11:38:23" level=info msg="Slasher received chain initialization event" genesisTime=2023-11-27 11:38:03 +0100 CET prefix=slasher
+time="2023-11-27 11:38:23" level=info msg="Completed chain sync, starting slashing detection" prefix=slasher
+time="2023-11-27 11:38:23" level=info msg="Reading last epoch written for each validator..." prefix=slasher
+time="2023-11-27 11:38:23" level=info msg="Finished retrieving last epoch written per validator" elapsed=262.168µs prefix=slasher
+time="2023-11-27 11:38:23" level=info msg="Started discovery v5" ENR="enr:-MK4QBC6OOG1k84MsLzgu9d5sGj7FlxZ__LfJBNUjYko6HXMMn6gaigiGDq0IzkllkFlEEdrC4Tc1bqNCR0u9sMjZ2-GAYwQW9j-h2F0dG5ldHOIAAAAAAAAAACEZXRoMpCdcTZPIAAAk___________gmlkgnY0gmlwhKFhiyuJc2VjcDI1NmsxoQI2IGzoRg2uIby0havZGXW5LOy3Z9cuDv1t5I-bnQ1Dj4hzeW5jbmV0cwCDdGNwghBpg3VkcIIQzQ" prefix=p2p
+time="2023-11-27 11:38:24" level=info msg="Node started p2p server" multiAddr="/ip4/161.97.139.43/tcp/4201/p2p/16Uiu2HAky4xfyqg7EVCPz1qmcFykvycoZ59shhHodtLFPP3Jo9Qz" prefix=p2p
+time="2023-11-27 11:38:24" level=info msg="Subscribed to topic" prefix=sync topic="/eth2/9d71364f/beacon_block/ssz_snappy"
+time="2023-11-27 11:38:24" level=info msg="Subscribed to topic" prefix=sync topic="/eth2/9d71364f/beacon_aggregate_and_proof/ssz_snappy"
+time="2023-11-27 11:38:24" level=info msg="Subscribed to topic" prefix=sync topic="/eth2/9d71364f/voluntary_exit/ssz_snappy"
+time="2023-11-27 11:38:24" level=info msg="Subscribed to topic" prefix=sync topic="/eth2/9d71364f/proposer_slashing/ssz_snappy"
+time="2023-11-27 11:38:24" level=info msg="Subscribed to topic" prefix=sync topic="/eth2/9d71364f/attester_slashing/ssz_snappy"
+time="2023-11-27 11:38:24" level=warning msg="Subnet weight is 0, skipping initializing topic scoring" prefix=p2p
+time="2023-11-27 11:38:24" level=info msg="Subscribed to topic" prefix=sync topic="/eth2/9d71364f/sync_committee_contribution_and_proof/ssz_snappy"
+time="2023-11-27 11:38:24" level=info msg="Subscribed to topic" prefix=sync topic="/eth2/9d71364f/bls_to_execution_change/ssz_snappy"
+time="2023-11-27 11:38:24" level=info msg="Subscribed to topic" prefix=sync topic="/eth2/9d71364f/blob_sidecar_0/ssz_snappy"
+time="2023-11-27 11:38:24" level=info msg="Subscribed to topic" prefix=sync topic="/eth2/9d71364f/blob_sidecar_1/ssz_snappy"
+time="2023-11-27 11:38:24" level=info msg="Subscribed to topic" prefix=sync topic="/eth2/9d71364f/blob_sidecar_2/ssz_snappy"
+time="2023-11-27 11:38:24" level=info msg="Subscribed to topic" prefix=sync topic="/eth2/9d71364f/blob_sidecar_3/ssz_snappy"
+time="2023-11-27 11:38:24" level=info msg="Subscribed to topic" prefix=sync topic="/eth2/9d71364f/blob_sidecar_4/ssz_snappy"
+time="2023-11-27 11:38:24" level=info msg="Subscribed to topic" prefix=sync topic="/eth2/9d71364f/blob_sidecar_5/ssz_snappy"
+time="2023-11-27 11:38:25" level=info msg="gRPC client connected to beacon node" addr="127.0.0.1:39266" prefix=rpc
+time="2023-11-27 11:38:27" level=info msg="Processing queued attestations for slashing detection" currentEpoch=0 currentSlot=2 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=0 prefix=slasher
+time="2023-11-27 11:38:27" level=warning msg="Subnet weight is 0, skipping initializing topic scoring" prefix=p2p
+time="2023-11-27 11:38:27" level=info msg="Subscribed to topic" prefix=sync topic="/eth2/9d71364f/sync_committee_0/ssz_snappy"
+time="2023-11-27 11:38:27" level=warning msg="Subnet weight is 0, skipping initializing topic scoring" prefix=p2p
+time="2023-11-27 11:38:27" level=info msg="Subscribed to topic" prefix=sync topic="/eth2/9d71364f/sync_committee_1/ssz_snappy"
+time="2023-11-27 11:38:27" level=warning msg="Subnet weight is 0, skipping initializing topic scoring" prefix=p2p
+time="2023-11-27 11:38:27" level=info msg="Subscribed to topic" prefix=sync topic="/eth2/9d71364f/sync_committee_2/ssz_snappy"
+time="2023-11-27 11:38:27" level=warning msg="Subnet weight is 0, skipping initializing topic scoring" prefix=p2p
+time="2023-11-27 11:38:27" level=info msg="Subscribed to topic" prefix=sync topic="/eth2/9d71364f/sync_committee_3/ssz_snappy"
+time="2023-11-27 11:38:27" level=info msg="Processing queued blocks for slashing detection" currentEpoch=0 currentSlot=2 numBlocks=0 prefix=slasher
+time="2023-11-27 11:38:27" level=warning msg="Subnet weight is 0, skipping initializing topic scoring" prefix=p2p
+time="2023-11-27 11:38:27" level=info msg="Subscribed to topic" prefix=sync topic="/eth2/9d71364f/beacon_attestation_2/ssz_snappy"
+time="2023-11-27 11:38:27" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=0s elapsed=661ns numAttestations=0 numBatchesByValidatorChunkIndex=0 prefix=slasher
+time="2023-11-27 11:38:27" level=info msg="Synced new block" block=0xc92ca943... epoch=0 finalizedEpoch=0 finalizedRoot=0x00000000... prefix=blockchain slot=2
+time="2023-11-27 11:38:27" level=info msg="Finished applying state transition" payloadHash=0x33fe93bf68c6 prefix=blockchain slot=2 syncBitsCount=0 txCount=0
+time="2023-11-27 11:38:38" level=info msg="Connected to new endpoint: http://localhost:8201" prefix=powchain
+time="2023-11-27 11:38:39" level=info msg="Processing queued attestations for slashing detection" currentEpoch=0 currentSlot=3 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=0 prefix=slasher
+time="2023-11-27 11:38:39" level=info msg="Processing queued blocks for slashing detection" currentEpoch=0 currentSlot=3 numBlocks=1 prefix=slasher
+time="2023-11-27 11:38:39" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=0s elapsed=1.733µs numAttestations=0 numBatchesByValidatorChunkIndex=0 prefix=slasher
+time="2023-11-27 11:38:39" level=error msg="Beacon node is not respecting the follow distance" prefix=powchain
+time="2023-11-27 11:38:39" level=info msg="Synced new block" block=0x1b4ada15... epoch=0 finalizedEpoch=0 finalizedRoot=0x00000000... prefix=blockchain slot=3
+time="2023-11-27 11:38:39" level=info msg="Finished applying state transition" attestations=1 payloadHash=0xb5a5d6f3ee5c prefix=blockchain slot=3 syncBitsCount=128 txCount=0
+time="2023-11-27 11:38:51" level=info msg="Processing queued attestations for slashing detection" currentEpoch=0 currentSlot=4 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-11-27 11:38:51" level=info msg="Processing queued blocks for slashing detection" currentEpoch=0 currentSlot=4 numBlocks=1 prefix=slasher
+time="2023-11-27 11:38:51" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=3.780573ms elapsed=3.782666ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-11-27 11:38:51" level=info msg="Begin building block" prefix="rpc/validator" sinceSlotStartTime=8.167725ms slot=4
+time="2023-11-27 11:38:51" level=warning msg="Beacon Node is no longer connected to an ETH1 chain, so ETH1 data votes are now mocked." prefix="rpc/validator"
+time="2023-11-27 11:38:51" level=info msg="Finished building block" prefix="rpc/validator" sinceSlotStartTime=15.169539ms slot=4 validator=1
+time="2023-11-27 11:38:51" level=info msg="Synced new block" block=0xe86d9cd8... epoch=0 finalizedEpoch=0 finalizedRoot=0x00000000... prefix=blockchain slot=4
+time="2023-11-27 11:38:51" level=info msg="Finished applying state transition" payloadHash=0xb804e9479f99 prefix=blockchain slot=4 syncBitsCount=0 txCount=0
+time="2023-11-27 11:39:03" level=info msg="Processing queued attestations for slashing detection" currentEpoch=0 currentSlot=5 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=0 prefix=slasher
+time="2023-11-27 11:39:03" level=info msg="Processing queued blocks for slashing detection" currentEpoch=0 currentSlot=5 numBlocks=0 prefix=slasher
+time="2023-11-27 11:39:03" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=0s elapsed=1.042µs numAttestations=0 numBatchesByValidatorChunkIndex=0 prefix=slasher
+time="2023-11-27 11:39:03" level=info msg="Synced new block" block=0xb681f74b... epoch=0 finalizedEpoch=0 finalizedRoot=0x00000000... prefix=blockchain slot=5
+time="2023-11-27 11:39:03" level=info msg="Finished applying state transition" payloadHash=0xea56f55088a0 prefix=blockchain slot=5 syncBitsCount=256 txCount=0
+time="2023-11-27 11:39:15" level=warning msg="Subnet weight is 0, skipping initializing topic scoring" prefix=p2p
+time="2023-11-27 11:39:15" level=info msg="Processing queued attestations for slashing detection" currentEpoch=1 currentSlot=6 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=0 prefix=slasher
+time="2023-11-27 11:39:15" level=info msg="Processing queued blocks for slashing detection" currentEpoch=1 currentSlot=6 numBlocks=1 prefix=slasher
+time="2023-11-27 11:39:15" level=error msg="could not process new slot" error="0x0000000000000000000000000000000000000000000000000000000000000000: unknown finalized root" prefix=blockchain
+time="2023-11-27 11:39:15" level=info msg="Subscribed to topic" prefix=sync topic="/eth2/9d71364f/beacon_attestation_5/ssz_snappy"
+time="2023-11-27 11:39:15" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=0s elapsed=1.032µs numAttestations=0 numBatchesByValidatorChunkIndex=0 prefix=slasher
+time="2023-11-27 11:39:15" level=info msg="Synced new block" block=0x804b1e82... epoch=1 finalizedEpoch=0 finalizedRoot=0x00000000... prefix=blockchain slot=6
+time="2023-11-27 11:39:15" level=info msg="Finished applying state transition" attestations=1 payloadHash=0xae392f9b5954 prefix=blockchain slot=6 syncBitsCount=128 txCount=0
+time="2023-11-27 11:39:24" level=info msg="Peer summary" activePeers=1 inbound=0 outbound=1 prefix=p2p
+time="2023-11-27 11:39:27" level=info msg="Processing queued attestations for slashing detection" currentEpoch=1 currentSlot=7 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-11-27 11:39:27" level=info msg="Processing queued blocks for slashing detection" currentEpoch=1 currentSlot=7 numBlocks=1 prefix=slasher
+time="2023-11-27 11:39:27" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=903.193µs elapsed=904.545µs numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-11-27 11:39:27" level=info msg="Synced new block" block=0x528939b0... epoch=1 finalizedEpoch=0 finalizedRoot=0x00000000... prefix=blockchain slot=7
+time="2023-11-27 11:39:27" level=info msg="Finished applying state transition" payloadHash=0x85cd7f93d1df prefix=blockchain slot=7 syncBitsCount=128 txCount=0
+time="2023-11-27 11:39:39" level=info msg="Processing queued attestations for slashing detection" currentEpoch=1 currentSlot=8 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=0 prefix=slasher
+time="2023-11-27 11:39:39" level=info msg="Processing queued blocks for slashing detection" currentEpoch=1 currentSlot=8 numBlocks=1 prefix=slasher
+time="2023-11-27 11:39:39" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=0s elapsed=551ns numAttestations=0 numBatchesByValidatorChunkIndex=0 prefix=slasher
+time="2023-11-27 11:39:39" level=info msg="Begin building block" prefix="rpc/validator" sinceSlotStartTime=166.860755ms slot=8
+time="2023-11-27 11:39:39" level=info msg="Finished building block" prefix="rpc/validator" sinceSlotStartTime=171.48009ms slot=8 validator=1
+time="2023-11-27 11:39:39" level=info msg="Synced new block" block=0x8f7a0bfa... epoch=1 finalizedEpoch=0 finalizedRoot=0x00000000... prefix=blockchain slot=8
+time="2023-11-27 11:39:39" level=info msg="Finished applying state transition" payloadHash=0x259eb004bd59 prefix=blockchain slot=8 syncBitsCount=0 txCount=0
+time="2023-11-27 11:39:51" level=info msg="Processing queued attestations for slashing detection" currentEpoch=1 currentSlot=9 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-11-27 11:39:51" level=info msg="Processing queued blocks for slashing detection" currentEpoch=1 currentSlot=9 numBlocks=0 prefix=slasher
+time="2023-11-27 11:39:51" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=1.057991ms elapsed=1.059765ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-11-27 11:39:51" level=info msg="Begin building block" prefix="rpc/validator" sinceSlotStartTime=155.133804ms slot=9
+time="2023-11-27 11:39:51" level=info msg="Finished building block" prefix="rpc/validator" sinceSlotStartTime=162.831474ms slot=9 validator=1
+time="2023-11-27 11:39:51" level=info msg="Synced new block" block=0x8ef2c2c1... epoch=1 finalizedEpoch=0 finalizedRoot=0x00000000... prefix=blockchain slot=9
+time="2023-11-27 11:39:51" level=info msg="Finished applying state transition" attestations=1 payloadHash=0xbde536118b22 prefix=blockchain slot=9 syncBitsCount=384 txCount=0
+time="2023-11-27 11:39:51" level=info msg="Got interrupt, shutting down..." prefix=node
+time="2023-11-27 11:39:51" level=info msg="Stopping beacon node" prefix=node
+time="2023-11-27 11:39:51" level=info msg="Flushing last epoch written for each validator to disk, please wait" prefix=slasher
+time="2023-11-27 11:39:51" level=info msg="Already shutting down, interrupt more to panic" prefix=node times=9
